@@ -3,8 +3,8 @@ import logo from "../Images/robot.jpeg";
 import "./Style/Profile.css"
 export default function Profile() {
   return (
-    <div className='container my-5'>
-      <div className='row'>
+    <div className='container my-5' style={{padding:"8px 8px 8px 8px "}} >
+      <div  className='row '>
         {/* First Column */}
         <div className='col-lg-6'>
          
@@ -41,6 +41,7 @@ export default function Profile() {
 
 
           <h3 className='mt-5 mb-3'>Notifications</h3>
+
           <div className='container'>
             <div className="row">
               <div style={{ height: "40px", width:"40px", borderRadius:"5px", backgroundColor: "gray" }} className='col-lg-2 d-flex justify-content-center align-items-center'>
@@ -64,27 +65,56 @@ export default function Profile() {
             </div>
           </div>
 
-          <h3 className='my-3'>Badges</h3>
-          <div className='container'>
-            <div className='row'>
-                <div className='col-lg-2' style={{width:"20px", height:"20px"}}>
-                <i class="fa-regular fa-hourglass"></i>
-                </div>
-                <div className='col-lg-4'>
-                   <div className='d-flex'>
-                    <h6>Active Learner</h6>
-                    <p style={{float:"right"}}></p>
-                   </div>
+
+          {/* curently processing */}
+
+          <h3 className='my-5'>Badges</h3>
+          <div style={{backgroundColor:"gray", borderRadius:"3px", }} className='container'>
+            <div className='row'> 
+                <div className='col-lg-1 d-flex justify-content-center align-items-center' style={{width:"29px", backgroundColor:"black", height:"29px", border:"1.7px solid gray", borderRadius:"5px" }}>
+              <div className="text-center" >  <i class="fa-regular fa-hourglass"></i> </div>
                 </div>
 
-                <hr />
-                <h5>Maintain a 3 day streak</h5>
+                <div className='col-lg-5  '>
+                  
+                   <div className='d-flex justify-content-between '>
+                    <h3 >Active Learner</h3>
+                    <p >3/3</p>
+                    </div>
+                    <hr />
+                    <h5>Maintain a 3 day streak</h5>
+                </div>                
             </div>
-            Active learner
           </div>
-          <div className='container'>
-            Point Progress
+
+
+          <div style={{backgroundColor:"gray",borderRadius:"3px",}} className='container my-4'>
+            <div className='row'> 
+                <div className='col-lg-2 d-flex justify-content-center align-items-center' style={{width:"29px", backgroundColor:"black", height:"29px", border:"1.7px solid gray", borderRadius:"5px" }}>
+              <div className="text-center" > <i class="fa-solid fa-trophy"></i> </div>
+                </div>
+
+
+                <div className='col-lg-3 '>
+                  
+                   <div className='d-flex justify-content-between '>
+                    <h3 >Point Progress</h3>
+                    <p >2500/3000</p>
+                
+                    </div>
+                    <hr />
+                    <h5>Earn 500 more points</h5>
+                   
+                </div>
+
+                
+            </div>
+          
           </div>
+
+          
+
+          
         </div>
 
 
@@ -92,14 +122,37 @@ export default function Profile() {
 
 
         {/* Second Column */}
-        <div className="col-lg-6">
-          <h3>Projects</h3>
+        <div className="my-3">
+        <h3>Projects</h3>
+            <div style={{backgroundColor:"gray", borderRadius:"2px"}}>
+        
           <div className='my-2'>
-            <img style={{ borderRadius: "40px" }} width="10px" height="10px" src={logo} alt="" />
-            <hr />
-            <img style={{ borderRadius: "40px" }} width="10px" height="10px" src={logo} alt="" />
-            <button className='my-2' style={{ backgroundColor: "white" }}> View all </button>
-          </div>
+
+            <div style={{border:"thin solid #000  ",  borderRadius: "20px" , }}>
+            <h4 width="10px" height="10px"> NAIH  </h4>
+            </div>
+            <br />
+            <div style={{border:"thin solid #000 ", borderRadius: "20px" }}>
+            <h4  width="10px" height="10px"> Notebook  </h4>
+            </div> 
+            <br />
+            <div style={{border:"thin solid #000", borderRadius: "20px" }}>
+            <h4  width="10px" height="10px"> Hackathon  </h4>
+            </div>
+
+           
+              </div>
+              </div>
+
+              <div className='d-flex justify-content-center align-items-center'>
+                <div className='text-center'>
+                <button className='my-2' style={{ backgroundColor: "orange", borderRadius:"3px" }}> View all </button>
+       
+                </div>
+            </div>
+
+
+
 
           <h3>Friends</h3>
           <div>
