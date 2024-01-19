@@ -13,7 +13,7 @@ export default function Pricing() {
         </div>
 
       
-        <div style={{padding:" 20px 20px 0px 20px"}}className='container'>
+        <div style={{padding:" 20px 20px 0px 20px", color:"black"}}className='container'>
         <div  className='row'>
             
             <div style={{width:"30%", marginRight:"5px", backgroundColor:"#e2ddf5", borderRadius:"10px"}} className='col-lg-3 my-2'>

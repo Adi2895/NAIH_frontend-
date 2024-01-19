@@ -1,5 +1,6 @@
 import React from 'react'
 import  "./Style/NavabarFront.css"
+import { Link } from 'react-router-dom'
 export default function NavabarFront() {
   
   return (
@@ -18,8 +19,8 @@ export default function NavabarFront() {
             <span className="home-nav5">Blog</span>
             </nav>
             <div className="home-buttons">
-                <button className="home-login button">Login</button>
-                <button className="home-register button">Register</button>
+                <Link style={{padding:"2px 3px 2px 3px"}} to="/login" className="home-login button">Login</Link>
+                <Link style={{padding:"2px 3px 2px 3px"}}to="/register" className="home-register button">Register</Link>
               </div>
               {/* </div> */}
             {/* <div data-thq="thq-navbar-nav" className="home-desktop-menu">

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function LearnMore() {
   return (
-    <div className='container' style={{backgroundColor:"black" }} >
-        <div className='d-flex align-items-center' style={{color:"white", paddingTop:"30px"}}>
+    <div className='' style={{backgroundColor:"black" }} >
+        <div className='d-flex justify-content-center align-items-center' style={{color:"white", paddingTop:"30px"}}>
         <div class="col-12 text-center mb-5">
       <h3 className='mb-3'>Unlock the potential of student</h3>
       <h3 className='mb-3'>innovation</h3>

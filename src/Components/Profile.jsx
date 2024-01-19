@@ -3,11 +3,13 @@ import logo from "../Images/robot.jpeg";
 import "./Style/Profile.css"
 export default function Profile() {
   return (
-    <div className='container my-5' style={{padding:"8px 8px 8px 8px "}} >
+    <div  className='container my-5' style={{padding:"8px 8px 8px 8px ", backgroundColor:"#201e1e"}} >
       <div  className='row '>
         {/* First Column */}
         <div className='col-lg-6'>
          
+
+
           <div class="container">
         <img class="image" src={logo} alt="User Image"/>
         <div class="content mx-4">
@@ -75,7 +77,7 @@ export default function Profile() {
               <div className="text-center" >  <i class="fa-regular fa-hourglass"></i> </div>
                 </div>
 
-                <div className='col-lg-5  '>
+                <div className='col-lg-11  '>
                   
                    <div className='d-flex justify-content-between '>
                     <h3 >Active Learner</h3>
@@ -106,15 +108,8 @@ export default function Profile() {
                     <h5>Earn 500 more points</h5>
                    
                 </div>
-
-                
             </div>
-          
-          </div>
-
-          
-
-          
+          </div>  
         </div>
 
 
