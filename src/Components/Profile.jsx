@@ -3,14 +3,14 @@ import logo from "../Images/robot.jpeg";
 import "./Style/Profile.css"
 export default function Profile() {
   return (
-    <div  className='container my-5' style={{padding:"8px 8px 8px 8px ", backgroundColor:"#201e1e"}} >
+    <div  className='container my-5' style={{padding:"8px 8px 8px 8px ", backgroundColor:"#201e1e", color:"white", display:"flex"}} >
       <div  className='row '>
         {/* First Column */}
         <div className='col-lg-6'>
          
 
 
-          <div class="container">
+          <div class="container"  style={{padding:"8px 8px 8px 8px ", color:"white", display:"flex"}}>
         <img class="image" src={logo} alt="User Image"/>
         <div class="content mx-4">
             <h3>John Doe</h3>
@@ -18,19 +18,19 @@ export default function Profile() {
            
             <div style={{border:"3px solid gray", borderRadius:"10px",  padding: "10px"}} class="variable-container">
             <div className="row">
-              <div style={{ height: "20px", width:"25px"}} className='col-lg-2 d-flex justify-content-center align-items-center'>
+              <div style={{ height: "20px", width:"25px"}} className='col-lg-4 d-flex justify-content-center align-items-center'>
                 <div className='text-center'>
                 <p>New Messages</p>
                 <p  className='my-3'>3</p>
                 </div>
               </div>
-              <div style={{ height: "20px", width:"35px" }} className='col-lg-2  d-flex justify-content-center align-items-center mx-4'>
+              <div style={{ height: "20px", width:"35px" }} className='col-lg-4  d-flex justify-content-center align-items-center mx-4'>
                 <div className='text-center'>
                 <p>Upcoming Deadlines</p>
                 <p  className='my-3'>4</p>
                 </div>
               </div>
-              <div style={{ height: "20px", width:"30px"}} className='col-lg-2 d-flex justify-content-center align-items-center mx-2'>
+              <div style={{ height: "20px", width:"30px"}} className='col-lg-4 d-flex justify-content-center align-items-center mx-2'>
                 <div className='text-center'>
                 <p>Achievements</p>
                 <p  className='my-3'>10</p>
@@ -46,19 +46,19 @@ export default function Profile() {
 
           <div className='container'>
             <div className="row">
-              <div style={{ height: "40px", width:"40px", borderRadius:"5px", backgroundColor: "gray" }} className='col-lg-2 d-flex justify-content-center align-items-center'>
+              <div style={{ height: "40px", width:"40px", borderRadius:"5px", backgroundColor: "gray" }} className='col-lg-4 d-flex justify-content-center align-items-center'>
                 <div className='text-center'>
                 <p>New Messages</p>
                 <p  className='my-3'>3</p>
                 </div>
               </div>
-              <div style={{ height: "40px", width:"40px", borderRadius:"5px", backgroundColor: "gray" }} className='col-lg-2 d-flex justify-content-center align-items-center mx-3'>
+              <div style={{ height: "40px", width:"40px", borderRadius:"5px", backgroundColor: "gray" }} className='col-lg-4 d-flex justify-content-center align-items-center mx-3'>
                 <div className='text-center'>
                 <p>Upcoming Deadlines</p>
                 <p  className='my-3'>4</p>
                 </div>
               </div>
-              <div style={{ height: "40px", width:"40px", borderRadius:"5px", backgroundColor: "gray" }} className='col-lg-2 d-flex justify-content-center align-items-center'>
+              <div style={{ height: "40px", width:"40px", borderRadius:"5px", backgroundColor: "gray" }} className='col-lg-4 d-flex justify-content-center align-items-center'>
                 <div className='text-center'>
                 <p>Achievements</p>
                 <p  className='my-3'>10</p>
@@ -71,13 +71,13 @@ export default function Profile() {
           {/* curently processing */}
 
           <h3 className='my-5'>Badges</h3>
-          <div style={{backgroundColor:"gray", borderRadius:"3px", }} className='container'>
-            <div className='row'> 
-                <div className='col-lg-1 d-flex justify-content-center align-items-center' style={{width:"29px", backgroundColor:"black", height:"29px", border:"1.7px solid gray", borderRadius:"5px" }}>
+          <div style={{backgroundColor:"gray", borderRadius:"3px", }} className='container '>
+            <div className='row d-flex'> 
+                <div className='col-lg-3 d-flex justify-content-center align-items-center' style={{width:"30px", backgroundColor:"black", height:"29px", border:"1.7px solid gray", borderRadius:"5px" }}>
               <div className="text-center" >  <i class="fa-regular fa-hourglass"></i> </div>
                 </div>
 
-                <div className='col-lg-11  '>
+                <div className='col-lg-9'>
                   
                    <div className='d-flex justify-content-between '>
                     <h3 >Active Learner</h3>
@@ -117,7 +117,7 @@ export default function Profile() {
 
 
         {/* Second Column */}
-        <div className="my-3">
+        <div className=" col-lg-6 my-3">
         <h3>Projects</h3>
             <div style={{backgroundColor:"gray", borderRadius:"2px"}}>
         
